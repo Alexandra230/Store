@@ -1,3 +1,2 @@
 # Store
-Flora store
-simple store, run only with VS Code
+Simple flora store, run only with VS Code
