@@ -1,0 +1,41 @@
+{
+  "1001": {
+    "name" : "Груша",
+    "cost" : "50",
+    "description" : "сажанец",
+    "image" : "/img/pear.jpg",
+    "type" : "tree"
+  },
+  "1002": {
+    "name" : "Черешня",
+    "cost" : "100",
+    "description" : "сажанец",
+    "image" : "/img/cherry.jpg",
+    "type" : "tree"
+  },
+  "1003": {
+    "name" : "Ромашки",
+    "cost" : "20",
+    "description" : "семена",
+    "image" : "/img/daisies.jpg"
+  },
+  "1004": {
+    "name" : "Тюлбпан",
+    "cost" : "40",
+    "description" : "луковица",
+    "image" : "/img/tulips.jpg"
+  },
+  "1005": {
+    "name" : "Овес",
+    "cost" : "5",
+    "description" : "семена",
+    "image" : "/img/oats.jpg"
+  },
+  "1006": {
+    "name" : "Рис",
+    "cost" : "10",
+    "description" : "семена",
+    "image" : "/img/rice.jpg"
+  }
+
+}

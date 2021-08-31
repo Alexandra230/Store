@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Эйфлория</title>
+</head>
+<body>
+    <section class="welcome">
+        <button onclick="document.getElementById('id01').style.display='block'" class="button main btn1">Sign up</button>
+        <button onclick="document.getElementById('id02').style.display='block'" class="button main btn2">Sign in</button>
+    </section>
+    <section class="logo">
+        <h1>Эйфлория</h1>
+        <span>&hearts; In harmony with nature &hearts;</span>
+    </section>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form id="form1" method="post"  class="modal-content">
+        <div class="container">
+    
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="login"><b>Login</b></label><br>
+        <input type="text" placeholder="Enter Login" id="login" name="login" required>
+        <br>
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="15" required>
+        <br>
+        <label for="psw-repeat"><b>Repeat Password</b></label><br>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="15"  required>
+        <div class="error"></div>
+    
+    
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+        <div class="clearfix">
+        <button type="button" id="cancel" class="button cancelbtn">Cancel</button>
+        <button type="button"  class="button btn2 signupbtn" onclick="return validateForm()">Sign Up</button>
+        </div>
+        </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+        <form id="form2" method="post"  class="modal-content">
+        <div class="container">
+    
+        <p>Please fill in this form to sign in.</p>
+        <hr>
+        <label for="login1"><b>Login</b></label><br>
+        <input type="text" placeholder="Enter Login" id="login1" name="login1" required>
+        <br>
+        <label for="psw1"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw1" id="psw1" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="15" required>
+        <br>
+        <div class="error"></div>
+    
+        <div class="clearfix">
+        <button type="button" id="back" class="button cancelbtn">Cancel</button>
+        <button type="button" id="submbtn2"  class="button btn2 signupbtn" onclick="return validateFormOfSignIn()">Sign In</button>
+        </div>
+        </div>
+        </form>
+    </div>
+    <script src="./js/formValid.js"></script>
+</body>
+</html>
